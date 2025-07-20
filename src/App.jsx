@@ -1,7 +1,13 @@
-export default function App() {
+import Layout from './components/Layout';
+import SentimentCard from './SentimentCard'; 
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="bg-white min-h-screen text-white p-4">
+      <Layout />
+      <SentimentCard />
+    </div>
+  );
 }
+
+export default App;
